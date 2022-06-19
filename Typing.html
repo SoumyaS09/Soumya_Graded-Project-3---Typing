@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <title>Typing Speed Tester!</title>
+  <link rel="stylesheet" href="Typing.css">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="title">Typing Speed Tester!</div><hr>
+    <div class="border">
+    <div class="header">
+
+      <div class="wpm">
+        <div class="head">WPM</div>
+        <div class="init_wpm">100</div>
+      </div>
+
+      <div class="cpm">
+        <div class="head">CPM</div>
+        <div class="init_cpm">100</div>
+      </div>
+
+      <div class="errors">
+        <div class="head">Errors</div>
+        <div class="init_errors">0</div>
+      </div>
+      
+      <div class="timer">
+        <div class="head">Time(s)</div>
+        <div class="init_time">60s</div>
+      </div>
+      
+      <div class="accuracy">
+        <div class="head">Accuracy(%)</div>
+        <div class="init_accuracy">100</div>
+      </div>
+    </div>
+    </div>
+
+    <div class="content" style="display: none;"></div>
+     <textarea class="input_box" placeholder="Start typing..." oninput="textInput()"
+      onfocus="startGame()"></textarea>
+      <br>
+      <button class="start" onclick="startGame()">Start</button><br>
+      <button class="restart" onclick="resetGame()">Restart</button>
+
+</body>
+<script src="JS/Paragraph.js"></script>
+<script src="JS/typing.js"></script>
+</html>
